@@ -2,7 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #221e20;
     font-weight: 400;
-    color: #666;
+    color: white;
     font-size: 12px;
     line-height: 20px;
     width: 100%;
@@ -744,4 +744,12 @@ h2.price {
 .btn-info:hover, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
     background-image: none;
     background-color: #df5c39;
+}
+
+/* Flex patterns implement */
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
