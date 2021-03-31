@@ -1,0 +1,39 @@
+
+<form action="{{ action }}" method="post" id="payment">
+
+<input type="hidden" name="ID" value="{{ klikandpay_id }}">
+<input type="hidden" name="NOM" value="{{ cust_lname }}">
+<input type="hidden" name="PRENOM" value="{{ cust_fname }}">
+<input type="hidden" name="SOCIETE" value="{{ cust_societe }}">
+<input type="hidden" name="ADRESSE" value="{{ cust_address }}">
+<input type="hidden" name="CODEPOSTAL" value="{{ cust_zip }}">
+<input type="hidden" name="VILLE" value="{{ cust_city }}">
+<input type="hidden" name="PAYS" value="{{ cust_country }}">
+<input type="hidden" name="REGION" value="{{ cust_zone }}">
+<input type="hidden" name="EMAIL" value="{{ order_email }}">
+<input type="hidden" name="TEL" value="{{ cust_phone }}">
+<input type="hidden" name="FAX" value="{{ cust_fax }}">
+<input type="hidden" name="MONTANT" value="{{ klikandpay_montant }}">
+<input type="hidden" name="L" value="{{ langue }}">
+<input type="hidden" name="DETAIL" value="{{ detail_panier }}">
+
+<input type="hidden" name="NOMLIV" value="{{ liv_lname }}">
+<input type="hidden" name="PRENOMLIV" value="{{ liv_fname }}">
+<input type="hidden" name="ADRESSELIV" value="{{ liv_address }}">
+<input type="hidden" name="CODEPOSTALLIV" value="{{ liv_zip }}">
+<input type="hidden" name="VILLELIV" value="{{ liv_city }}">
+<input type="hidden" name="PAYSLIV" value="{{ liv_country }}">
+<input type="hidden" name="TELLIV" value="{{ liv_phone }}">
+
+<input type="hidden" name="RETOUR" value="{{ order_id_crypt }}">
+<input type="hidden" name="RETOURVOK" value="{{ url_success }}">
+<input type="hidden" name="RETOURVHS" value="{{ url_refused }}">
+
+  <div class="buttons">
+    <div class="pull-right">
+      <input type="submit" value="{{ button_confirm }}" class="btn btn-primary" />
+    </div>
+  </div> 
+
+</form>
+
