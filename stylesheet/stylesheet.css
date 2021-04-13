@@ -87,25 +87,17 @@ div.required .control-label:before {
 #cart {
 	margin-bottom: 10px;
 }
-#cart > .btn {
+#cart > button {
 	font-size: 12px;
 	line-height: 18px;
-	color: #FFF;
-}
-#cart.open > .btn {
-	background-image: none;
-	background-color: #FFFFFF;
-	border: 1px solid #E6E6E6;
-	color: #666;
-	box-shadow: none;
-	text-shadow: none;
-}
-#cart.open > .btn:hover {
-	color: #444;
+	color: white;
+        background-color: transparent;
+        outline: none;
+        border: none;
 }
 #cart .dropdown-menu {
-	background: #eee;
-	z-index: 1001;
+    background: #4a4a4a;
+    z-index: 1001;
 }
 #cart .dropdown-menu {
 	min-width: 100%;
@@ -346,8 +338,11 @@ footer h5 {
 	font-family: FontAwesome;
 }
 /* product list */
+.product-buttons button {
+    outline: none;
+    background-color: transparent;
+}
 .product-thumb {
-	border: 1px solid #ddd;
 	margin-bottom: 20px;
 	overflow: auto;
 }
@@ -436,12 +431,7 @@ h2.price {
 	display: block;
 }
 .product-thumb .button-group {
-	border-top: 1px solid #ddd;
-	background-color: #eee;
 	overflow: auto;
-}
-.product-list .product-thumb .button-group {
-	border-left: 1px solid #ddd;
 }
 @media (max-width: 768px) {
 	.product-list .product-thumb .button-group {
@@ -462,11 +452,9 @@ h2.price {
 }
 .product-thumb .button-group button + button {
 	width: 20%;
-	border-left: 1px solid #ddd;
 }
 .product-thumb .button-group button:hover {
 	color: #444;
-	background-color: #ddd;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -500,7 +488,6 @@ h2.price {
 	margin-bottom: 20px;
 	padding: 5px;
 	display: block;
-	border: 1px solid #ddd;
 }
 .image-additional {
 	max-width: 78px;
@@ -593,6 +580,10 @@ h2.price {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.flex-space-between a {
+    color: white;
 }
 
 .flex-space-around {

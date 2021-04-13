@@ -1,11 +1,11 @@
 <div id="cart" class="btn-group btn-block">
-  <button type="button" data-toggle="dropdown" data-loading-text="{{ text_loading }}" class="btn btn-inverse btn-block btn-lg dropdown-toggle"><i class="fa fa-shopping-cart"></i> <span id="cart-total">{{ text_items }}</span></button>
+  <button type="button" data-toggle="dropdown" data-loading-text="{{ text_loading }}" class="dropdown-toggle"><i class="fa fa-shopping-cart"></i> <span id="cart-total">{{ text_items }}</span></button>
   <ul class="dropdown-menu pull-right">
     {% if products or vouchers %}
     <li>
       <table class="table table-striped">
         {% for product in products %}
-        <tr>
+            <tr style="background-color:#4a4a4a">
           <td class="text-center">{% if product.thumb %} <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-thumbnail" /></a> {% endif %}</td>
           <td class="text-left"><a href="{{ product.href }}">{{ product.name }}</a> {% if product.option %}
             {% for option in product.option %} <br />
